@@ -1,0 +1,215 @@
+.register-page {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Shared base styles */
+.register-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 70px 30px;
+  box-sizing: border-box;
+}
+
+.register-header .logo {
+  margin: 0;
+  font-size: 3rem;
+}
+
+
+.register-header h2 {
+  margin: 10px 0 5px;
+  font-size: 3.8rem;
+}
+
+.register-header p {
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-form label {
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.register-form input {
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.register-btn {
+  padding: 12px;
+  background-color: #ec244f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.register-btn:hover {
+  opacity: 0.9;
+  background-color: #ca1540;
+}
+
+.login-link p {
+  font-size: 0.95rem;
+}
+
+/* Right Column */
+.register-right {
+  flex: 1;
+  background-image: url('../../public/assests/Welcome.jpeg');
+  background-color: #fefefe;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.illustration-text {
+  margin-top: 20px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.illustration-text h3 {
+  font-size: 1.2rem;
+}
+
+/* THEME COLORS */
+/* Light Theme (default) */
+[data-theme='light'] .register-page {
+  background-color: #ffffff;
+  color: #333;
+}
+
+[data-theme='light'] .register-left {
+  background-color: #fcf3f3;
+}
+
+[data-theme='light'] .register-header .logo,
+[data-theme='light'] .register-btn {
+  background-color: #ec244f;
+  color: #fff;
+}
+
+[data-theme='light'] .register-btn:hover {
+  background-color: #ca1540;
+}
+
+
+/* Dark Theme */
+[data-theme='dark'] .register-page {
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+}
+
+[data-theme='dark'] .register-left {
+  background-color: #2a2a2a;
+}
+
+[data-theme='dark'] .register-header .logo,
+[data-theme='dark'] .register-btn {
+  background-color: #f05454;
+  color: #fff;
+}
+
+[data-theme='dark'] .register-btn:hover {
+  background-color: #d94343;
+}
+
+
+/* Blue Theme */
+[data-theme='blue'] .register-left {
+  background-color: #e3f2fd;
+}
+
+[data-theme='blue'] .register-header .logo,
+[data-theme='blue'] .register-btn {
+  background-color: #1976d2;
+  color: white;
+}
+
+[data-theme='blue'] .register-btn:hover {
+  background-color: #125ea7;
+}
+
+
+/* Green Theme */
+[data-theme='green'] .register-left {
+  background-color: #eafaf1;
+}
+
+[data-theme='green'] .register-header .logo,
+[data-theme='green'] .register-btn {
+  background-color: #43a047;
+  color: white;
+}
+
+[data-theme='green'] .register-btn:hover {
+  background-color: #2e7d32;
+}
+
+
+/* Purple Theme */
+[data-theme='purple'] .register-left {
+  background-color: #f3e8ff;
+}
+
+[data-theme='purple'] .register-header .logo,
+[data-theme='purple'] .register-btn {
+  background-color: #8e24aa;
+  color: white;
+}
+
+[data-theme='purple'] .register-btn:hover {
+  background-color: #6a1b9a;
+}
+
+
+/* Light Theme */
+[data-theme='light'] .register-header h2 {
+  color: #333333;
+}
+
+/* Dark Theme */
+[data-theme='dark'] .register-header h2 {
+  color: #f5f5f5;
+}
+
+/* Blue Theme */
+[data-theme='blue'] .register-header h2 {
+  color: #1565c0;
+}
+
+/* Green Theme */
+[data-theme='green'] .register-header h2 {
+  color: #2e7d32;
+}
+
+/* Purple Theme */
+[data-theme='purple'] .register-header h2 {
+  color: #6a1b9a;
+}

@@ -1,0 +1,271 @@
+.login-page {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Left Column */
+.login-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 70px 30px;
+  box-sizing: border-box;
+}
+
+.login-header .logo {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.login-header h2 {
+  margin: 10px 0 5px;
+  font-size: 3.8rem;
+}
+
+.login-header p {
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.login-form input {
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-right: 20px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.sign-in-btn {
+  padding: 12px;
+  background-color: #ec244f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+}
+
+.sign-in-btn:hover {
+  opacity: 0.9;
+  background-color: #ca1540;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  margin: 15px 20px;
+}
+
+.separator span {
+  flex: 1;
+  text-align: center;
+  color: #999;
+  position: relative;
+}
+
+.separator span::before,
+.separator span::after {
+  content: '';
+  display: inline-block;
+  width: 40%;
+  height: 1px;
+  background-color: #ccc;
+  position: absolute;
+  top: 50%;
+}
+
+.separator span::before {
+  left: 0;
+}
+
+.separator span::after {
+  right: 0;
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 0 20px 20px;
+}
+
+.google-btn img {
+  width: 20px;
+  margin-right: 8px;
+}
+
+.signup-link p {
+  font-size: 0.95rem;
+  margin-left: 20px;
+}
+
+/* Right Column */
+.login-right {
+  flex: 1;
+  background-image: url('../../public/assests/Thankyou.jpeg');
+  background-color: #fefefe;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.illustration-text {
+  margin-top: 20px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.illustration-text h3 {
+  font-size: 1.2rem;
+}
+
+/* === THEME COLORS === */
+
+/* Light Theme */
+[data-theme='light'] .login-page {
+  background-color: #ffffff;
+  color: #333;
+}
+
+[data-theme='light'] .login-left {
+  background-color: #fcf3f3;
+}
+
+[data-theme='light'] .login-header .logo,
+[data-theme='light'] .sign-in-btn {
+  background-color: #ec244f;
+  color: white;
+}
+
+[data-theme='light'] .sign-in-btn:hover {
+  background-color: #ca1540;
+}
+
+/* Dark Theme */
+[data-theme='dark'] .login-page {
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+}
+
+[data-theme='dark'] .login-left {
+  background-color: #2a2a2a;
+}
+
+[data-theme='dark'] .login-header .logo,
+[data-theme='dark'] .sign-in-btn {
+  background-color: #f05454;
+  color: white;
+}
+
+[data-theme='dark'] .sign-in-btn:hover {
+  background-color: #d94343;
+}
+
+/* Blue Theme */
+[data-theme='blue'] .login-left {
+  background-color: #e3f2fd;
+}
+
+[data-theme='blue'] .login-header .logo,
+[data-theme='blue'] .sign-in-btn {
+  background-color: #1976d2;
+  color: white;
+}
+
+[data-theme='blue'] .sign-in-btn:hover {
+  background-color: #125ea7;
+}
+
+/* Green Theme */
+[data-theme='green'] .login-left {
+  background-color: #eafaf1;
+}
+
+[data-theme='green'] .login-header .logo,
+[data-theme='green'] .sign-in-btn {
+  background-color: #43a047;
+  color: white;
+}
+
+[data-theme='green'] .sign-in-btn:hover {
+  background-color: #2e7d32;
+}
+
+/* Purple Theme */
+[data-theme='purple'] .login-left {
+  background-color: #f3e8ff;
+}
+
+[data-theme='purple'] .login-header .logo,
+[data-theme='purple'] .sign-in-btn {
+  background-color: #8e24aa;
+  color: white;
+}
+
+[data-theme='purple'] .sign-in-btn:hover {
+  background-color: #6a1b9a;
+}
+
+/* Light Theme */
+[data-theme='light'] .login-header h2 {
+  color: #333333;
+}
+
+/* Dark Theme */
+[data-theme='dark'] .login-header h2 {
+  color: #f5f5f5;
+}
+
+/* Blue Theme */
+[data-theme='blue'] .login-header h2 {
+  color: #1565c0;
+}
+
+/* Green Theme */
+[data-theme='green'] .login-header h2 {
+  color: #2e7d32;
+}
+
+/* Purple Theme */
+[data-theme='purple'] .login-header h2 {
+  color: #6a1b9a;
+}

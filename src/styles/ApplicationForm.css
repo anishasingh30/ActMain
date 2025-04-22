@@ -1,0 +1,169 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.container h2 {
+    font-size: 3.15rem;
+    color: var(--text-primary);
+    /* text-gray-800 */
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+}
+
+.container p {
+    color: var(--text-primary);
+    /* text-gray-700 */
+    line-height: 1.6;
+    font-size: 1rem;
+    background-color: var(--bg-secondary);
+    /* Light background for contrast */
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+
+.container strong {
+    font-weight: 600;
+}
+
+.container .mb-6 {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Base Styling */
+form {
+    max-width: 900px;
+    margin: 4rem auto;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    border-radius: 1rem;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+}
+
+form .btn-primary {
+    display: block;
+    margin: 2rem auto 1rem auto;
+    /* top, auto-left/right (centered), bottom */
+    width: fit-content;
+}
+
+
+
+/* Input Fields */
+.input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid var(--border-color);
+    border-radius: 0.5rem;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    outline: none;
+    transition: border-color 0.3s;
+    padding-top: 20px;
+}
+
+.input:focus {
+    border-color: var(--accent-color);
+}
+
+/* Textarea Styling */
+textarea.input {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Labels and Checkboxes */
+label {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+/* Submit Button */
+.btn-primary {
+    padding: 0.75rem;
+    font-weight: bold;
+    background-color: #e71e62;
+    color: var(--btn-text);
+    border-radius: 0.5rem;
+    border: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: var(--btn-hover);
+}
+
+/* Themes */
+:root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f0f0f0;
+    --text-primary: #1a1a1a;
+    --border-color: #cccccc;
+    --accent-color: #5555ff;
+    --btn-primary: #5555ff;
+    --btn-hover: #3333cc;
+    --btn-text: #ffffff;
+}
+
+/* Dark Theme */
+[data-theme='dark'] {
+    --bg-primary: #1e1e1e;
+    --bg-secondary: #2c2c2c;
+    --text-primary: #f5f5f5;
+    --border-color: #444444;
+    --accent-color: #8888ff;
+    --btn-primary: #8888ff;
+    --btn-hover: #6666cc;
+    --btn-text: #ffffff;
+}
+
+/* Blue Theme */
+[data-theme='blue'] {
+    --bg-primary: #e6f0ff;
+    --bg-secondary: #d0e3ff;
+    --text-primary: #003366;
+    --border-color: #6699cc;
+    --accent-color: #0055cc;
+    --btn-primary: #0055cc;
+    --btn-hover: #0044aa;
+    --btn-text: #ffffff;
+}
+
+/* Green Theme */
+[data-theme='green'] {
+    --bg-primary: #eaffea;
+    --bg-secondary: #d5f5d5;
+    --text-primary: #1d4020;
+    --border-color: #7fc97f;
+    --accent-color: #3fa73f;
+    --btn-primary: #3fa73f;
+    --btn-hover: #2e8b2e;
+    --btn-text: #ffffff;
+}
+
+/* Purple Theme */
+[data-theme='purple'] {
+    --bg-primary: #ebd2ff;
+    --bg-secondary: #e0d0f0;
+    --text-primary: #3d1d5c;
+    --border-color: #b285d9;
+    --accent-color: #9955cc;
+    --btn-primary: #9955cc;
+    --btn-hover: #7e3fc9;
+    --btn-text: #ffffff;
+}
