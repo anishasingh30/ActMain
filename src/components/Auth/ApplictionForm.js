@@ -47,7 +47,7 @@ const ApplicationForm = () => {
 
         try {
             const res = await axios.post(
-                "http://localhost:3006/api/applications/apply",
+                "https://actaware-2.onrender.com/api/applications/apply",
                 formData,
                 {
                     headers: {

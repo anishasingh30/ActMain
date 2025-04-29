@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3006/api/auth'; // Adjust to match your backend
+const API_URL = 'https://actaware-2.onrender.com/api/auth'; // Adjust to match your backend
 
 // Login
 export const loginUser = async (credentials) => {
