@@ -51,13 +51,13 @@ const ApplicationForm = () => {
                 formData,
                 {
                     headers: {
-                        Authorization: `Bearer ${token}`,  // ✅ This matches your backend
+                        Authorization: `Bearer ${token}`,  // This matches your backend
                     },
                 }
             );
 
             alert("Application submitted successfully!");
-            localStorage.setItem('userProfile', JSON.stringify(formData)); // ✅ Save profile
+            localStorage.setItem('userProfile', JSON.stringify(formData)); //  Save profile
             window.location.href = "http://localhost:3007/";
         } catch (error) {
             console.error("Submission error:", error.response?.data || error.message);

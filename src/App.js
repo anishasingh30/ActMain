@@ -8,6 +8,7 @@ import Footer from './pages/Footer';
 import ApplicationForm from "./components/Auth/ApplictionForm";
 import Login from "./components/Auth/LoginForm";
 import Register from './pages/RegisterForm';
+import DonationPage from './pages/DonationForm'
 import './App.css';
 
 function App() {
@@ -32,10 +33,14 @@ function App() {
                         path="/register"
                         element={<Register userId={userId} />}
                     />
+                    <Route
+                        path="/create-order"
+                        element={<DonationPage />}
+                    />
                 </Routes>
                 <Footer />
             </Router>
-        </ThemeProvider>
+        </ThemeProvider >
     );
 }
 

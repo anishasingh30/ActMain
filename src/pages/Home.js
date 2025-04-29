@@ -49,7 +49,7 @@ const Home = () => {
                         donate, and learn sign language to build a more inclusive world.
                     </p>
                     <div className="hero-buttons">
-                        <button className="primary-btn" onClick={() => window.location.href = "/contribute"}>
+                        <button className="primary-btn" onClick={() => window.location.href = "/create-order"}>
                             Contribute Now
                         </button>
 
